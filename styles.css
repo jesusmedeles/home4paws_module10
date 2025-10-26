@@ -9,12 +9,17 @@ img{max-width:100%;display:block}
 a{color:var(--brand);text-decoration:none}
 a:hover{text-decoration:underline}
 .container{max-width:1080px;margin:auto;padding:24px}
+
+/* Header */
 .header{background:#E7F6F8;position:sticky;top:0;z-index:10;border-bottom:1px solid #dbe7ea}
 .nav{display:flex;gap:18px;align-items:center;justify-content:space-between}
 .brand{display:flex;gap:10px;align-items:center}
-.brand span{font-weight:800;font-size:1.15rem}
+.brand-logo{width:36px;height:36px}
+.brand-name{font-weight:800;font-size:1.15rem}
 .nav a.btn{background:var(--brand);color:white;padding:10px 16px;border-radius:10px;text-decoration:none}
 .nav a.btn:hover{background:#0b7f8a}
+
+/* Content */
 .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:32px 0}
 .hero h1{font-size:2.4rem;margin:.2rem 0}
 .badge{display:inline-flex;align-items:center;gap:8px;background:#eafaf3;color:#065f46;padding:6px 10px;border-radius:999px;font-size:.9rem}
@@ -37,3 +42,10 @@ input,select,textarea{width:100%;padding:12px;border:1px solid #D1D5DB;border-ra
 .success{background:#ecfdf5;border:1px solid #a7f3d0;color:#065f46;padding:10px;border-radius:10px;margin-top:12px}
 .donate-icon{width:72px;height:72px;border-radius:16px;background:#fff;box-shadow:var(--shadow);display:grid;place-items:center;border:3px solid var(--accent)}
 .donate-callout{display:flex;gap:18px;align-items:center}
+
+/* Make sure no accidental background images create a second logo */
+.brand,
+.brand::before,
+.brand::after,
+.brand-name::before,
+.brand-name::after { background-image:none !important; content:unset !important; }
