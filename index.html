@@ -1,30 +1,19 @@
-<!-- Header (put inside <header class="header">) -->
-<div class="container nav">
-  <a class="brand" href="index.html" aria-label="Home4Paws home">
-    <img src="assets/logo.svg" alt="" width="28" height="28"><span>Home4Paws</span>
-  </a>
-  <nav aria-label="primary">
-    <a href="adopt.html">Adopt</a>
-    <a href="donate.html">Donate</a>
-    <a class="btn" href="contact.html">Book a Visit</a>
-  </nav>
-</div>
-
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Home4Paws — A safe haven for every dog</title>
-<link rel="icon" href="assets/logo.svg">
+<link rel="icon" href="assets/home4paws-logo.svg">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="header">
-  <!-- include shared header -->
   <div class="container nav">
-    <a class="brand" href="index.html"><img src="assets/home4paws-logo.svg" alt="Home4Paws logo" width="32" height="32">
-<span>Home4Paws</span></a>
+    <a class="brand" href="index.html" aria-label="Home4Paws home">
+      <img src="assets/home4paws-logo.svg" alt="Home4Paws logo" width="32" height="32">
+      <span>Home4Paws</span>
+    </a>
     <nav aria-label="primary">
       <a href="adopt.html">Adopt</a>
       <a href="donate.html">Donate</a>
@@ -54,37 +43,24 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="featured">
     <h2>Featured dogs</h2>
     <div class="card-grid" aria-live="polite">
-      <!-- You can replace these Unsplash images with your own -->
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1200&auto=format&fit=crop" alt="Smiling golden retriever">
-        <div class="body">
-          <div class="kicker">Golden Retriever • 3 yrs</div>
-          <strong>Sunny</strong>
-        </div>
+        <img src="assets/sunny.png" alt="Smiling golden retriever">
+        <div class="body"><div class="kicker">Golden Retriever • 3 yrs</div><strong>Sunny</strong></div>
       </article>
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b6?q=80&w=1200&auto=format&fit=crop" alt="Playful black and white puppy">
-        <div class="body">
-          <div class="kicker">Mixed • 6 mo</div>
-          <strong>Pixel</strong>
-        </div>
+        <img src="assets/pixel.png" alt="Playful black and white puppy">
+        <div class="body"><div class="kicker">Mixed • 6 mo</div><strong>Pixel</strong></div>
       </article>
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=1200&auto=format&fit=crop" alt="Gentle senior beagle">
-        <div class="body">
-          <div class="kicker">Beagle • 9 yrs</div>
-          <strong>Maple</strong>
-        </div>
+        <img src="assets/maple.png" alt="Gentle senior beagle">
+        <div class="body"><div class="kicker">Beagle • 9 yrs</div><strong>Maple</strong></div>
       </article>
       <article class="card">
-        <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=1200&auto=format&fit=crop" alt="Energetic husky">
-        <div class="body">
-          <div class="kicker">Husky • 2 yrs</div>
-          <strong>Kodi</strong>
-        </div>
+        <img src="assets/kodi.png" alt="Energetic husky">
+        <div class="body"><div class="kicker">Husky • 2 yrs</div><strong>Kodi</strong></div>
       </article>
     </div>
   </section>
@@ -105,18 +81,8 @@
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <p>© <span id="year"></span> Home4Paws — A community dog adoption & rehoming haven.</p>
-  </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
-</footer>
-
 
