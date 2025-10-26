@@ -1,0 +1,113 @@
+<!-- Header (put inside <header class="header">) -->
+<div class="container nav">
+  <a class="brand" href="index.html" aria-label="Home4Paws home">
+    <img src="assets/logo.svg" alt="" width="28" height="28"><span>Home4Paws</span>
+  </a>
+  <nav aria-label="primary">
+    <a href="adopt.html">Adopt</a>
+    <a href="donate.html">Donate</a>
+    <a class="btn" href="contact.html">Book a Visit</a>
+  </nav>
+</div>
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact & Appointments — Home4Paws</title>
+<link rel="icon" href="assets/logo.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="28" height="28"><span>Home4Paws</span></a>
+    <nav aria-label="primary">
+      <a href="adopt.html">Adopt</a>
+      <a href="donate.html">Donate</a>
+      <a class="btn" aria-current="page" href="contact.html">Book a Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <h1>Request an in-person appointment</h1>
+  <p>Please complete the form below. We’ll confirm your visit time by email or text.</p>
+
+  <form id="contact-form" class="form" aria-describedby="formHelp">
+    <div id="formHelp" class="kicker">Fields marked * are required.</div>
+
+    <div class="grid-2">
+      <div>
+        <label for="owner_name">Owner name *</label>
+        <input id="owner_name" name="owner_name" required autocomplete="name">
+      </div>
+      <div>
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" required autocomplete="email" inputmode="email">
+      </div>
+    </div>
+
+    <label for="address">Address *</label>
+    <input id="address" name="address" required autocomplete="street-address">
+
+    <div class="grid-2">
+      <div>
+        <label for="mobile">Mobile number *</label>
+        <input id="mobile" name="mobile" required inputmode="tel" autocomplete="tel">
+      </div>
+      <div>
+        <label for="appointment">Preferred appointment date/time *</label>
+        <input id="appointment" name="appointment" type="datetime-local" required>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div>
+        <label for="breed">Dog breed *</label>
+        <input id="breed" name="breed" required>
+      </div>
+      <div>
+        <label for="age">Dog age (years) *</label>
+        <input id="age" name="age" type="number" min="0" step="0.5" required>
+      </div>
+      <div>
+        <label for="reason">Reason for visit</label>
+        <select id="reason" name="reason">
+          <option value="adopt">I want to adopt</option>
+          <option value="donate">I need to rehome my dog</option>
+          <option value="general">General visit</option>
+        </select>
+      </div>
+    </div>
+
+    <label for="notes">Notes</label>
+    <textarea id="notes" name="notes" rows="4" placeholder="Anything we should know? Allergies, other pets, etc."></textarea>
+
+    <p class="kicker">This demo stores your request locally for class purposes only.</p>
+
+    <button class="cta" type="submit">Request appointment</button>
+    <div id="success" class="success" hidden tabindex="-1" role="status" aria-live="polite">
+      ✅ Thanks! Your request was saved locally. (For a real site, connect this form to a backend or form service.)
+    </div>
+  </form>
+</main>
+
+<footer class="footer">
+  <div class="container"><p>© <span id="year"></span> Home4Paws</p></div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Home4Paws — A community dog adoption & rehoming haven.</p>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</footer>
