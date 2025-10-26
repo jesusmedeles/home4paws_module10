@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title id="title">Home4Paws Logo</title>
+  <!-- House shape -->
+  <path d="M60 10L10 45v55a5 5 0 0 0 5 5h90a5 5 0 0 0 5-5V45L60 10z"
+        fill="#0FA3B1" stroke="#0C7F8A" stroke-width="3"/>
+  <!-- Paw print -->
+  <circle cx="60" cy="65" r="10" fill="#F4A261"/>
+  <circle cx="45" cy="55" r="5" fill="#F4A261"/>
+  <circle cx="75" cy="55" r="5" fill="#F4A261"/>
+  <circle cx="52" cy="43" r="5" fill="#F4A261"/>
+  <circle cx="68" cy="43" r="5" fill="#F4A261"/>
+  <!-- Text -->
+  <text x="60" y="105" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif"
+        font-weight="700" font-size="14" fill="#1F2937">Home4Paws</text>
+</svg>
